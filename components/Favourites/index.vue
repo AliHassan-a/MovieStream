@@ -6,7 +6,7 @@
   >
     <div class="trending flex flex-col items-start">
       <h1 class="text-white text-[18px] font-semibold pb-[16px]">Favourites</h1>
-      <div class="cards flex items-center justify-start gap-4 flex-wrap">
+      <div class="cards flex items-center justify-start max-[1150px]:justify-center gap-4 flex-wrap">
         <div v-for="(trendingData, index) in favourites">
           <CommonCard :cardData="trendingData" :width="348" :height="259"/>
         </div>

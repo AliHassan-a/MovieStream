@@ -1,12 +1,13 @@
 <template>
   <div
-    class="wrapper text-white bg-[#21201E] h-[100vh] box-bordern p-[30px] min-w-[1600px]:p-[40px] flex flex-col items-start overflow-y-auto shadow-custom z-10"
+    class="wrapper text-white bg-[#21201E] h-[100vh] box-bordern p-[30px] min-w-[1600px]:p-[40px] flex flex-col items-start overflow-y-auto shadow-custom z-10 transition ease-in-out duration-1000 delay-1000"
   >
-    <div class="logo ">
-      <NuxtLink to="/" class="flex gap-2 text-center cursor-pointer items-center">
+    <div class="logo flex justify-between w-full items-center">
+      <NuxtLink to="/" class="flex gap-2 text-center cursor-pointer items-center ">
         <NuxtIcon name="coffee" filled="" class="text-[24px] watchIcon"/>
       <div class="text-base text-white text-[22px] font-bold">WATCH</div>
       </NuxtLink>
+      <NuxtIcon name="cross" class="text-[20px] font-extrabold cursor-pointer hidden max-[767px]:block " @click="closeSidebar"/>
 
     </div>
     <div class="topSection py-[48px] min-w-[1600px]:py-[58px]  flex flex-col min-w-[1600px]:gap-8 gap-7" >
@@ -54,6 +55,11 @@
 
 <script setup>
 var menuClicked = false
+import {useIsOpen} from "~/composables/useGlobalData";
+const isOpen = useIsOpen()
+const closeSidebar = ()=>{
+  isOpen.value = false;
+}
 </script>
 <style>
 .watchIcon{

@@ -12,13 +12,13 @@
       <div class="watchSection flex items-center justify-between">
         <NuxtLink to="/player">
           <div
-          class="text-white text-[17px] px-[24px] py-[14px] cursor-pointer bg-[#6100C2] text-center font-medium rounded-2xl hover:bg-bannerBtn-gradient hover:text-[#6100C2] border-2 border-[#6100C2]"
+          class="text-white text-[17px] px-[24px] py-[10px] cursor-pointer bg-[#6100C2] text-center font-medium rounded-2xl hover:bg-bannerBtn-gradient hover:text-[#6100C2] border-2 border-[#6100C2]"
         >
           Watch now
         </div>
         </NuxtLink>
       
-        <NuxtIcon :name="favourite ? 'filledHeart':'purpleHeart'" filled="" class="text-[24px] cursor-pointer p-[14px] bg-bannerBtn-gradient rounded-[14px]" @click="toggleFavourite"/>
+        <NuxtIcon :name="favourite ? 'filledHeart':'purpleHeart'" filled="" class="text-[24px] cursor-pointer p-[11px] bg-bannerBtn-gradient rounded-[14px]" @click="toggleFavourite"/>
       </div>
     </div>
   </div>

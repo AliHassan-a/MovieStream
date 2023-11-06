@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="albumDetails flex items-center justify-start w-full gap-[1rem]">
-      <div class="albumPoster w-[50%]">
+    <div class="albumDetails flex items-center justify-start w-full gap-[1rem] max-[900px]:flex-col">
+      <div class="albumPoster">
         <img :src="`${selectedAlbumData?.backgroundImg}`" />
       </div>
-      <div class="albumDetails w-[50%] flex items-center justify-start flex-col gap-[1.5rem]">
+      <div class="albumDetails w-[50%] max-[900px]:w-[100%] flex items-center justify-start flex-col gap-[1.5rem]">
         <div class="topHead flex items-center justify-between w-full">
           <div class="genre text-white">
             <div class="title font-semibold text-[32px]">

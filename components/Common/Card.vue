@@ -1,7 +1,7 @@
 <template>
   <div :style="{ backgroundImage: `url(${cardData?.backgroundImg})`,width:`${width
   }px`,height:`${height}px` }"
-    class="cardContainer bg-no-repeat bg-cover bg-center border border-gray-400 rounded-[20px] cursor-pointer">
+    class="cardContainer bg-no-repeat bg-cover bg-center border border-gray-400 rounded-[20px] cursor-pointer w-[255px] h-[301px] max-[1440px]:w-[270px] max-[1440px]:h-[325px] max-[900px]:w-[208px] max-[900px]:h-[300px]  max-[503px]:w-[270px]  ">
     <div class="cardContent flex flex-col  justify-between h-[100%]">
       <div class="favtIcon flex items-center justify-end p-[20px]">
         <NuxtIcon :name="cardData?.favourite ? 'filledHeart' : 'purpleHeart'" filled=""
@@ -26,11 +26,9 @@ const props = defineProps({
   },
   width:{
     type:Number,
-    default:255
   },
   height:{
     type:Number,
-    default:301
   },
 })
 const { cardData,width,height } = props

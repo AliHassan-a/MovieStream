@@ -21,7 +21,7 @@
       >
         <div
         @click="toHomePage()"
-          class="text-white bg-[#6100C2] w-[225px] py-[17px] px-[24px] text-center rounded-[14px] cursor-pointer hover:bg-bannerBtn-gradient hover:text-[#6100C2] font-medium border-2 border-[#6100C2]"
+          class="text-white bg-[#6100C2] w-[210px] py-[14px] px-[20px] text-center rounded-[14px] cursor-pointer hover:bg-bannerBtn-gradient hover:text-[#6100C2] font-medium border-2 border-[#6100C2]"
         >
           Login
         </div>

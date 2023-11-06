@@ -1,9 +1,9 @@
 <template>
   <div class="dashboardParent h-[100vh] overflow-y-auto pt-[92px]">
-    <div class="px-[32px] py-[16px]">
+    <div class="px-[32px] py-[16px] flex flex-col max-[900px]:gap-10">
       <div class="trending flex flex-col items-start pb-[32px]">
         <h1 class="text-white text-[18px] pb-[16px]">Trending</h1>
-        <div class="cards flex items-center justify-start gap-4 flex-wrap">
+        <div class="cards flex items-center justify-start  max-[1150px]:justify-center gap-4 flex-wrap">
           <div v-for="(trendingData, index) in trendingData">
             <CommonCard :cardData="trendingData" @click="handleClickAlbum(trendingData)" />
           </div>

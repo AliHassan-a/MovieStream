@@ -52,6 +52,28 @@ const trending = [
     overView:
     "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
   },
+  {
+    backgroundImg: HouseOfGucci,
+    favourite: true,
+    title: "House of Gucci",
+    year: "2021",
+    type: "Drama",
+    rattings: "7.5",
+    duration: "2h 38m",
+    overView:
+    "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  },
+  {
+    backgroundImg: HouseOfGucci,
+    favourite: true,
+    title: "House of Gucci",
+    year: "2021",
+    type: "Drama",
+    rattings: "7.5",
+    duration: "2h 38m",
+    overView:
+    "The movie follows the lives of a wealthy family, the Johnsons, who appear to have it all: a grand mansion, luxurious cars, and expensive designer clothing. However, behind the facade of their lavish lifestyle, there are deep-seated tensions and secrets that threaten to tear the family apart.",
+  },
 ];
 const continueWatching = [
   {
@@ -102,3 +124,8 @@ export const useContinueWatching = () => {
 export const useFavourites = () => {
   return useState("favourites", () => favourites);
 };
+
+const isOpen = false;
+export const useIsOpen = () =>{
+  return useState("isOpen", ()=>isOpen)
+}
